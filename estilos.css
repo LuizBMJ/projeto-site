@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('truetype');
+    font-weight: normal;
+}
+
+
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --cor0: #01F411;
+    --cor1: #22CA2D;
+    --cor2: #35A03C;
+    --cor3: #3B753F;
+    --cor4: #3F5E41;
+    --cor5: #2B332B;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'idroid', 'cursive';
+}
+
+
+body {
+    font-family: var(--fonte-padrao);
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: justify;
+}
+
+header {
+    color: white;
+    background: linear-gradient(90deg, #3F5E41, #3B753F, #3F5E41 100%);
+    text-align: center;
+    padding-top: 1px;
+    font-family: var(--fonte-padrao);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    font-weight: bold;
+}
+
+main {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+footer > p {
+    font-size: 1em;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: var(--cor4);
+    margin: auto;
+    padding: 5px 0 5px 0;
+}
+
+#titulo-principal {
+    font-family: var(--fonte-destaque);
+    font-size: 4em;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 15px;
+}
+
+#principal-topico {
+    font-size: 2.5em;
+    font-family: var(--fonte-android);
+    color: var(--cor2)
+}
+
+#curiosidade {
+    font-size: 1em;
+    font-family: var(--fonte-padrao);
+    margin: auto;
+    padding: 0 10px 5px 10px;
+    color: black;
+    background-color: #22ca2d71;
+    text-align: justify;
+    text-indent: 2em;
+    border-radius: 10px;
+    box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.233);
+    overflow: hidden;
+}
+
+
+#curiosidade-texto {
+    background-color: var(--cor2);
+    padding: 10px 20px;
+    margin-left: -10px; 
+    margin-right: -10px;
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-indent: 0;
+    text-align: left;
+}
+
+
+
+#lista {
+    column-count: 2;
+    column-gap: 1.5rem;
+    width: 100%;           
+    margin: 0;             
+    padding: 0;            
+    box-sizing: border-box;
+    list-style: none;
+}
+
+#lista li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 6px;
+}
+
+#lista li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url('imagens/visto.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.topico {
+    font-size: 2em;
+    font-family: var(--fonte-android);
+    color: var(--cor2);
+    background: linear-gradient(90deg, #22ca2d48, #ffffff 100%);
+    margin: auto auto auto 5px;
+    padding-left: 10px;
+}
+
+.texto {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    text-align: justify;
+    margin: 20px 0;
+    text-indent: 2em;
+}
+
+.menu {
+    display: inline-block;
+
+}
+
+.menu:hover {
+    background-color: #2b332b81;
+    cursor: pointer;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.video {
+    background-color: var(--cor4);
+    padding: 20px;
+    margin: 30px 0;
+    margin-left: -20px;  
+    margin-right: -20px;
+    overflow: hidden;
+}
+
+
+.video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+}
+
+.link {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+.link_footer {
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+
+    #principal-topico {
+        font-size: 1.8em;
+        letter-spacing: 0;
+        word-spacing: 0;
+        line-height: 1.2;
+    }
+
+    .topico {
+        font-size: 1.5em;
+        letter-spacing: 0;
+        word-spacing: 0;
+        line-height: 1.2;
+    }
+
+    #lista {
+        column-count: 1 !important;
+    }
+}
+
