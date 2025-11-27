@@ -4,14 +4,12 @@
     font-family: 'idroid';
     src: url('fontes/idroid.otf') format('opentype');
     font-weight: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'idroid2';
     src: url('fontes/idroid.ttf') format('TrueType');
     font-weight: normal;
-    font-display: swap;
 }
 
 .bebas-neue-regular {
@@ -87,15 +85,15 @@ footer > p {
 #titulo-principal {
     font-family: var(--fonte-destaque);
     font-size: 5em;
+    font-weight: normal;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     margin: 15px;
-    font-weight: normal;
 }
 
 #principal-topico {
-    font-size: 2.5em;
-    font-family: var(--fonte-android);
     color: var(--cor2);
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
     font-weight: normal;
 }
 
@@ -156,14 +154,15 @@ footer > p {
 }
 
 .topico {
-    font-size: 2em;
+    color: var(--cor2);
+    font-size: 1.3em;
     font-family: var(--fonte-android);
     font-weight: normal;
     margin: auto auto auto 5px;
     padding-left: 10px;
     border-radius: 4px;
-    color: var(--cor2);
     background: linear-gradient(90deg, #22ca2d48, #ffffff 100%); 
+    text-indent: 8px;
     
 }
 
@@ -243,7 +242,6 @@ footer > p {
 
     #principal-topico {
         font-family: 'idroid2', cursive;
-        font-size: 1.8em;
         letter-spacing: 0 !important;
         word-spacing: 0 !important;
         line-height: 1.2;
@@ -258,7 +256,6 @@ footer > p {
 
     .topico {
         font-family: 'idroid2', cursive;
-        font-size: 1.5em;
         letter-spacing: 0 !important;
         word-spacing: 0 !important;
         line-height: 1.2;
