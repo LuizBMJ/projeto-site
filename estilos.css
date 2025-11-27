@@ -232,6 +232,7 @@ footer > p {
     }
 
     #principal-topico {
+        font-family: 'idroid2', cursive;
         font-size: 1.8em;
         letter-spacing: 0 !important;
         word-spacing: 0 !important;
@@ -245,6 +246,7 @@ footer > p {
     }
 
     .topico {
+        font-family: 'idroid2', cursive;
         font-size: 1.5em;
         letter-spacing: 0 !important;
         word-spacing: 0 !important;
