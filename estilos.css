@@ -7,6 +7,13 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'idroid2';
+    src: url('fontes/idroid.ttf') format('TrueType');
+    font-weight: normal;
+    font-display: swap;
+}
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -22,7 +29,7 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", cursive;
-    --fonte-android: 'idroid', cursive;
+    --fonte-android: 'idroid2', 'idroid', cursive;
 }
 
 body {
@@ -79,7 +86,7 @@ footer > p {
 
 #titulo-principal {
     font-family: var(--fonte-destaque);
-    font-size: 4em;
+    font-size: 5em;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     margin: 15px;
 }
@@ -149,10 +156,11 @@ footer > p {
 .topico {
     font-size: 2em;
     font-family: var(--fonte-android);
-    color: var(--cor2);
-    background: linear-gradient(90deg, #22ca2d48, #ffffff 100%);
     margin: auto auto auto 5px;
     padding-left: 10px;
+    border-radius: 4px;
+    color: var(--cor2);
+    background: linear-gradient(90deg, #22ca2d48, #ffffff 100%); 
 }
 
 .texto {
