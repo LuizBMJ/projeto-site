@@ -242,7 +242,7 @@ footer > p {
 
     #principal-topico {
         font-family: 'idroid2', cursive;
-        letter-spacing: 0 !important;
+        letter-spacing: -1 !important;
         word-spacing: 0 !important;
         line-height: 1.2;
         font-kerning: none;
