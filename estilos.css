@@ -2,8 +2,9 @@
 
 @font-face {
     font-family: 'idroid';
-    src: url('fontes/idroid.otf') format('truetype');
+    src: url('fontes/idroid.otf') format('opentype');
     font-weight: normal;
+    font-display: swap;
 }
 
 .bebas-neue-regular {
@@ -11,7 +12,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 :root {
     --cor0: #01F411;
     --cor1: #22CA2D;
@@ -21,8 +21,8 @@
     --cor5: #2B332B;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 'Bebas Neue', 'cursive';
-    --fonte-android: 'idroid', 'cursive';
+    --fonte-destaque: "Bebas Neue", cursive;
+    --fonte-android: 'idroid', cursive;
 }
 
 body {
@@ -55,7 +55,7 @@ nav {
 
 main {
     display: block;
-    margin: 0;
+    margin: auto;
     padding: 20px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -166,7 +166,6 @@ footer > p {
     position: relative;
     padding: 0.6rem 1rem;
     border-radius: 0.3125rem;
-    border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -233,4 +232,3 @@ footer > p {
     }
  
 }
-
