@@ -59,9 +59,10 @@ main {
     max-width: 1000px;
     margin: auto;
     padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     background-color: rgba(255,255,255,0.95);
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    border-radius: 8px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -165,7 +166,8 @@ footer > p {
 
 .menu {
     position: relative;
-    padding: 10px 15px;
+    padding: 0.6rem 1rem;
+    border-radius: 0.3125rem;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
@@ -179,11 +181,11 @@ footer > p {
     background-color: var(--cor5);
 }
 
-.img {
+.img{
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
+    margin: auto;
     height: auto;
+    max-width: 100%;
 }
 
 .video {
@@ -221,6 +223,10 @@ footer > p {
         line-height: 1.2;
     }
 
+    #lista {
+        column-count: 1 !important;
+    }
+
     .topico {
         font-size: 1.5em;
         letter-spacing: 0;
@@ -228,7 +234,8 @@ footer > p {
         line-height: 1.2;
     }
 
-    #lista {
-        column-count: 1 !important;
+    .menu {
+        padding: 0.4rem 0.8rem;
     }
+ 
 }
